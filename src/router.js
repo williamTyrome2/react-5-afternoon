@@ -15,7 +15,26 @@ import Finish from './components/Finish/Finish';
 import NextBtn from './components/NextBtn/NextBtn';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 
-
+export default (
+    <Switch>  
+  
+          <Route component={NextBtn} exact path= '/'/>
+          <Route component={WizardOne}  path='/wOne'/>
+          <Route component={WizardTwo}  path="/wTwo"/>
+          <Route component={WizardThree} path="/wThree"/>
+          <Route component={WizardFour} path="/wFour"/>
+          <Route component={WizardFive} path="/wFive"/>
+          <Route component={WizardSix} path="/wSix"/>
+          <Route component={WizardSeven} path="/wSeven"/>
+          <Route component={WizardEight} path="/wEight"/>
+          <Route component={WizardNine} path="/wNine"/>
+          <Route component={WizardTen} path="/wTen"/>
+          <Route component={WizardEleven} path="/wEleven"/>
+          <Route component={Finish} path='/finish'/>
+  
+        </Switch>
+  )
+  
 export default function(loanType, propType, changeLoanType, changePropertyType, changePropertyToBeUsedOn, propToBeUsedOn, city, updateCity, foundFalse, foundTrue, found, realEstateAgentTrue, realEstateAgentFalse, realEstateAgent, updateDownPayment, downPayment, updateCost, cost, credit, updateCreditE,updateCreditG, updateCreditF,updateCreditP, history, updateHistory, addressOne, addressTwo, addressThree, updateAddLineOne, updateAddLineTwo, updateAddLineThree, updateFirst, updateLast, updateEmail, firstName, lastName, email){
 
         return (
